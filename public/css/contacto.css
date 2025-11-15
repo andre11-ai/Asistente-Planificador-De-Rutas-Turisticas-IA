@@ -1,0 +1,199 @@
+  body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+  }
+
+  /* ====== HEADER ====== */
+  header {
+      background-color: #004a8f;
+      color: white;
+      padding: 12px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  header h1 {
+      font-size: 18px;
+      margin: 0;
+      font-weight: 600;
+  }
+
+  nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: 500;
+      transition: opacity 0.3s;
+  }
+
+  nav a:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+  }
+
+  /* ====== HERO ====== */
+  .hero {
+      background: linear-gradient(to right, #004a8f, #0073d1);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+  }
+
+  .hero h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+  }
+
+  .hero p {
+      font-size: 15px;
+      opacity: 0.9;
+  }
+
+  /* ====== CONTENEDOR PRINCIPAL ====== */
+  .container {
+      padding: 50px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+  }
+
+  .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      transition: transform 0.3s;
+  }
+
+  .card:hover {
+      transform: translateY(-4px);
+  }
+
+  .card h3 {
+      color: #004a8f;
+      font-size: 20px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #f0f4f8;
+      padding-bottom: 5px;
+  }
+
+  .card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+  }
+
+  /* ====== FORMULARIO ====== */
+  form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 10px;
+  }
+
+  input,
+  textarea,
+  select {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 14px;
+      font-family: inherit;
+  }
+
+  textarea {
+      min-height: 100px;
+      resize: none;
+  }
+
+  button {
+      background-color: #004a8f;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 5px;
+  }
+
+  button:hover {
+      background-color: #0060c4;
+  }
+
+  /* ====== FAQ ====== */
+  .faq-item {
+      margin-bottom: 10px;
+  }
+
+  .faq-item summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: #004a8f;
+      margin-bottom: 5px;
+  }
+
+  .faq-item p {
+      margin: 8px 0 0 10px;
+      font-size: 14px;
+      color: #555;
+  }
+
+  /* ====== CONTACTO ====== */
+  .contact-info {
+      text-align: center;
+      padding: 40px 20px 60px 20px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      margin: 0 40px 50px 40px;
+  }
+
+  .contact-info h3 {
+      color: #004a8f;
+      margin-bottom: 15px;
+  }
+
+  .contact-info p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+  }
+
+  .contact-info a {
+      color: #0073d1;
+      text-decoration: none;
+      font-weight: 500;
+  }
+
+  .contact-info a:hover {
+      text-decoration: underline;
+  }
+
+  /* ====== FOOTER ====== */
+  footer {
+      background-color: #004a8f;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: auto;
+  }
+
+  @media (max-width: 768px) {
+      .container {
+          padding: 30px 20px;
+      }
+
+      .contact-info {
+          margin: 0 20px 40px 20px;
+      }
+  }

@@ -10,8 +10,9 @@ const RutasIA: React.FC = () => {
         <nav>
           <Link href="/">Inicio</Link>
           <Link href="/Destino">Destinos</Link>
+          <Link href="/Educativa">Educativa</Link>
           <Link href="#">Promociones</Link>
-          <Link href="#">Contacto</Link>
+          <Link href="/Contacto">Contacto</Link>
         </nav>
         <div className="user-icon"></div>
       </header>
